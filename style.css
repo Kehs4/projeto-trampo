@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+    box-shadow: 25px 25px 25px black;
+}
+
+
+.logo {
+    font-size: 40px;
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    top: 0px;
+    letter-spacing: -0.03em;
+    text-shadow: 2px 2px 2px #ababab;
+}
+
+.logoFrase {
+    color :#000000;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    font-style: italic;
+    letter-spacing: -0.03em;
+    text-shadow: 2px 2px 2px #ababab;
+}
+
+.lista {
+    position: absolute;
+    padding: 0px;
+    right: 30px;
+    top: -0px;
+    display: flex;
+    margin: 4px;
+    letter-spacing: -0.01em;
+}
+
+.btnContato {
+    margin-right: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #041b5b 0%, #2b2bc3  51%, #041b5b  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 1px 1px 1px rgb(19, 3, 84);  
+}
+
+.btnContato:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    scale: 1.02;
+}
+
+.btnTrabalhadores {
+    margin-right: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 160px;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #041b5b 0%, #2b2bc3  51%, #041b5b  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 1px 1px 1px rgb(22, 10, 129);  
+
+}
+
+.btnTrabalhadores:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    scale: 1.02;
+}
+
+
+.btnEntrar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 120px;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #240339 0%, #a209b3  51%, #24033b 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 2px 2px 3px rgb(78, 2, 132);
+}
+
+.btnEntrar:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    scale: 1.02;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-items: center
+}
+
+.imgTrabalhadora {
+    width: 100%;
+    height: 900px;
+    opacity: 0.88;
+    box-shadow: 5px 5px 5px #02012d;
+}
+
+.Trampo {
+    position: absolute;
+    top: 150px;
+    font-size: 80px;
+    left: 110px;
+    color: #ffffff;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 25px 25px 25px rgba(0, 0, 0, 0.6);
+    letter-spacing: -0.03em;
+}
+
+.FraseInicio {
+    position: absolute;
+    top: 300px;
+    font-size: 45px;
+    left: 80px;
+    color: #ffffff;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: -0.03em;
+}
+
+.buscaInicio {
+    position: absolute;
+    top: 600px;
+    left: 82px;
+}
+
+.textoBusca {
+    width: 580px;
+    height: 60px;
+    font-size: 25px;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.859);
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btnBuscaInicio {
+    position: relative;
+    height: 60px;
+    width: 85px;
+    border-radius: 50%;
+    left: 10px;
+    top: -10px;
+    border-top-style: ridge;
+    font-size: 15px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 3px 3px 5px #000000;
+    cursor: pointer;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btnBuscaInicio:hover {
+    scale: 1.02;
+    transition: 0.8s;
+}
+
+.btnCadastre {
+    top: 370px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    width: 400px;
+    height: 80px;
+    font-size: 25px;
+    margin: 0px 40px 0px;
+    cursor: pointer;
+    border-radius: 100px;
+    position: relative;
+    background-image: linear-gradient(to right, #240439 0%, #660c70  51%, #240439 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow:  2px 2px 10px black;  
+}
+
+.btnCadastre:hover {
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.escritaCadastre {
+    top: 45px;
+    position: absolute;
+    left: 22px;
+    text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.6);
+    font-size: 36px;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+.Cadastre {
+    width: 500px;
+    height:500px;
+    border: 10px solid; 
+    border-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    background-color: white;
+    position: absolute;
+    top: 155px;
+    right: 80px;
+    box-shadow: 1px 20px 40px rgb(63, 3, 136);
+    border-top-color: #370459;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-bottom-color: #4a1170;
+}
+
+form {   
+    top: 220px;
+    position: absolute;
+    margin: 20px;
+    padding: 30px 20px 20px;
+}   
+
+.inputEmail {
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+    width: 400px;
+    color: black;
+}
+
+.inputEmail:focus {
+    font-size: 20px;
+    outline: 0;
+}
+
+.inputSenha {
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-top: 25px;
+    font-size: 15px;
+    width: 400px;
+}
+
+.inputSenha:focus {
+    font-size: 20px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.conteudo1 {
+    display: flex;
+    flex: content;
+    align-items: center;
+    justify-items: center;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #02012d;
+}
+
+.imgTrabalhador {
+    width: 600px;
+    height: 380px;
+    box-shadow: 5px 5px 5px #4c4c4c;
+}
+
+.sobreNos {
+    position: absolute;
+    left: 170px;
+    top: -80px;
+    color: #444444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.escritaSobreNos {
+    font-size: 32px;
+    color: #292929;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 680px;
+}
+
+.conteudo2 {
+    margin: 0;
+}
+
+.fundoServicos {
+    width: 100%;
+    height: 600px;
+    border: none;
+    opacity: 0.18;
+    box-shadow: 0px 5px 15px black;
+}
+
+.escritaServicos {
+    font-size: 40px;
+    color: #2c2c2c;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1530px;
+    width: 100%;
+}
+
+.bodyServicos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    top: 1650px;
+    width: 98%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 1px 1px 30px black;
+}
+
+.imgPintor {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0px 4px 20px black;
+    cursor: pointer;
+}
+
+.imgPintor:hover, .imgPedreiro:hover, .imgEletricista:hover, .imgDiarista:hover {
+    scale: 1.02;
+    transition: 0.8s;
+}
+
+.imgPedreiro {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0px 4px 20px black;
+    cursor: pointer;
+}
+
+.imgEletricista {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0px 4px 20px black;
+    cursor: pointer;
+}
+
+.imgDiarista {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0px 4px 20px black;
+    cursor: pointer;
+}
+
+.headerServicos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 1650px;
+    width: 98%;
+    margin-left: 10px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    box-shadow: 0px 1px 1px black;
+}
+
+.escritaPintor {
+    position: relative;
+    left: -45px;
+    cursor: pointer;
+}
+
+.escritaPintor:hover, .escritaPedreiro:hover, .escritaEletricista:hover, .escritaDiarista:hover {
+    scale: 1.02;
+    transition: 0.8s;
+}
+
+.escritaPedreiro{
+    position: relative;
+    left: 3px;
+    cursor: pointer;
+}
+.escritaEletricista{
+    position: relative;
+    left: 22px;
+    cursor: pointer;
+}
+
+.escritaDiarista {
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 200px;
+    height: 295px;
+    width: 100%;
+    background-image: linear-gradient(rgb(27, 3, 34) 85%, #3d115a 100%);
+}
+
+.escritaFooter {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.01em;
+    line-height: 2;
+    left: 800px;
+    position: absolute;
+    font-size: 18px;
+    text-shadow: 0px 1px 2px #ba37c8;
+    box-shadow: 0px 1px rgb(255, 255, 255);
+}
+
+.imgRedesSociais {
+    display: flex;
+    justify-content: space-around;
+    justify-items: baseline;
+    right: 420px;
+    position: absolute;
+    top: 2250px;
+}
+
+.imgInstagram {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imgFacebook {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imgTwitter {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imgLinkedin {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
