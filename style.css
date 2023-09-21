@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
+@media screen and (min-width: 500px) { 
 
 header {
     display: flex;
@@ -12,6 +13,7 @@ header {
     height: 60px;
     box-shadow: 25px 25px 25px black;
 }
+
 
 
 .logo {
@@ -123,9 +125,7 @@ header {
 }
 
 .background {
-    display: flex;
-    align-items: center;
-    justify-items: center
+    z-index: 1;
 }
 
 .imgTrabalhadora {
@@ -164,7 +164,7 @@ header {
 }
 
 .textoBusca {
-    width: 580px;
+    width: 800px;
     height: 60px;
     font-size: 25px;
     border-left: none;
@@ -197,20 +197,49 @@ header {
     transition: 0.8s;
 }
 
+#formCadastre {
+    display: flex;
+    margin-top: 15px;
+}
+
+.inputEmail {
+    font-size: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 450px;
+    font-family: Roboto, cursive;
+}
+
+.inputSenha {
+    font-size: 20px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 450px;
+    font-family: Roboto, cursive;
+}
+
+.inputEmail:focus {
+    outline: 0;
+}
+
+.btnCadastre1 {
+    display: flex;
+    align-items: flex-end;
+}
+
 .btnCadastre {
-    top: 385px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     width: 400px;
+    margin-left: 40px;
     height: 80px;
     font-size: 25px;
-    margin: 0px 40px 0px;
     cursor: pointer;
     border-radius: 100px;
-    position: relative;
     background-image: linear-gradient(to right, #240439 0%, #660c70  51%, #240439 100%);
     transition: 0.5s;
-    background-size: 200% auto;
     color: white;            
     box-shadow:  2px 2px 10px black;  
 }
@@ -223,27 +252,16 @@ header {
     transition: 0.5s;
 }
 
-.escritaCadastre {
-    top: 45px;
-    position: absolute;
-    left: 22px;
-    text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.6);
-    font-size: 36px;
-    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000000;
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-}
-
 .Cadastre {
     width: 500px;
     height:500px;
-    margin-right: 60px;
     border: 10px solid; 
     border-color: rgb(255, 255, 255);
     border-radius: 15%;
     background-color: white;
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 175px;
     right: 80px;
     box-shadow: 1px 20px 40px rgb(63, 3, 136);
@@ -253,35 +271,18 @@ header {
     border-bottom-color: #4a1170;
 }
 
-form {   
-    top: 220px;
-    position: absolute;
-    margin: 20px;
-    padding: 30px 20px 20px;
-}   
-
-.inputEmail {
-    border: none;
-    border-bottom: 1px solid #333;
-    font-size: 25px;
-    width: 400px;
-    color: black;
-}
-
-.inputEmail:focus {
-    outline: 0;
-}
-
-.inputSenha {
-    border: none;
-    border-bottom: 1px solid #333;
-    margin-top: 25px;
-    font-size: 25px;
-    width: 400px;
-}
-
-.inputSenha:focus {
-    outline: 0;
+.escritaCadastre {
+    top: 45px;
+    left: 22px;
+    text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.6);
+    font-size: 38px;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    margin-left: 39px;
+    margin-top: 50px;
 }
 
 .conteudo1 {
@@ -293,7 +294,7 @@ form {
 }
 
 .imgTrabalhador {
-    width: 600px;
+    width: 800px;
     height: 380px;
     box-shadow: 5px 5px 5px #4c4c4c;
 }
@@ -316,9 +317,11 @@ form {
     font-family: Roboto, cursive;
     align-items: baseline;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-evenly;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 50px;
     text-shadow: 2px 4px 2px rgb(216, 216, 216);
 }
 
@@ -329,7 +332,10 @@ form {
     font-family: Roboto, cursive;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    padding: 50px;
+}
+
+.conteudo2 {
+    margin: 60px;
 }
 
 .imgPintor {
@@ -366,7 +372,7 @@ form {
 
 .headerServicos {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -374,7 +380,7 @@ form {
     color: rgb(0, 0, 0);
     font-size: 28px;
     z-index: 1;
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .escritaPintor {
@@ -402,9 +408,8 @@ form {
 
 .footer {
     display: flex;
-    justify-content: baseline;
+    justify-content: flex-end;
     align-items: center;
-    width: 200px;
     height: 295px;
     width: 100%;
     background-image: linear-gradient(rgb(27, 3, 34) 85%, #3d115a 100%);
@@ -417,9 +422,9 @@ form {
     line-height: 2;
     left: 800px;
     font-size: 18px;
-    margin-left: 20px;
+    margin-right: 100px;
     text-shadow: 0px 1px 2px #ba37c8;
     box-shadow: 0px 1px rgb(255, 255, 255);
 }
 
-
+}
