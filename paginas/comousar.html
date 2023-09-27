@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Como usar o Trampo</title>
-    <link rel="stylesheet" href="comousar/csscomousar.css">
+    <link rel="stylesheet" href="comousar/csscomousar/csscomousar.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body background="comousar/imgs/img-fundo.png">
+<body>
 <main>  
     <header>
         <div>
@@ -29,6 +29,7 @@
         </div>
     </header>
     
+
     <section class="firstSection">
         <div>
             <h1>Como se Cadastrar</h1>
@@ -39,14 +40,18 @@
     <section class="secondSection">
         <div class="etapasCadastro">
             <div class="escritaCadastro">
-                <h2>1 - Faça seu cadastro</h2>
-                <h2>2 - Envie seus dados</h2>
-                <h2>3 - Crie seu anúncio</h2>
+                <h2 class="escritaUm">1 - Faça seu cadastro</h2>
+                <h2 class="escritaDois">2 - Envie seus dados</h2>
+                <h2 class="escritaTres">3 - Crie seu anúncio</h2>
             </div>
 
+            
+
             <div class="imgsCadastro">
-                <img src="comousar/imgs/pintor-desenho.png" alt="">
-                <img src="comousar/imgs/cadastro-desenho.png" alt="">
+                
+                <img class="imgCadastro" src="comousar/imgs/cadastro-desenho2.png" alt="Imagem do Cadastro">
+                <img class="imgDados" src="comousar/imgs/envie-dados.png" alt="Imagem dos Dados">
+                <img class="imgPintor" src="comousar/imgs/pintor-desenho.png" alt="Imagem do Anúncio">
             </div>
         </div> 
     </section>
@@ -59,10 +64,20 @@
     </section>
 
     <section>
-        <nav>
-                <a href="index.html"><button>Cadastre-se já!</button></a>
-        </nav>
+        <div>
+            <a href="index.html"><button class="btnSignup">Cadastre-se já!</button></a>
+        </div>
     </section>
+
 </main>
+
+    <footer class="footer">
+        <div class="escritaFooter">
+            <h1 class="footerh1">Trampo</h1>
+            <p>© 2023 Trampo - A.D.S Cruzeiro do Sul.<br> Av. das Nações Unidas, 18605 - Santo Amaro, São Paulo - SP,
+            04795-100<br> (11) 91234-5678</p>
+         </div>
+    </footer>
+
 </body>
 </html>
