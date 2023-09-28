@@ -24,8 +24,8 @@ header {
     top: -1px;
     letter-spacing: -0.03em;
     text-shadow: 2px 2px 2px #ababab;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 200px;
 }
 
 .logoFrase {
@@ -200,28 +200,6 @@ header {
 #formCadastre {
     display: flex;
     margin-top: 15px;
-}
-
-.inputEmail {
-    font-size: 20px;
-    height: 40px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 450px;
-    font-family: Roboto, cursive;
-}
-
-.inputSenha {
-    font-size: 20px;
-    height: 40px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    width: 450px;
-    font-family: Roboto, cursive;
-}
-
-.inputEmail:focus {
-    outline: 0;
 }
 
 .btnCadastre1 {
