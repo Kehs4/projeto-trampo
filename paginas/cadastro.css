@@ -2,37 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: ;
 }
 
 body{
     width: 100%;
     background-color: #A2A8DF;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container{
-    width: 80%;
-    height: 80vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form{
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align
     background-color: ;
 
 }
 
 .form-header{
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -63,14 +58,13 @@ body{
 .input-group{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 0;
 }
 
 .input-box{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
 }
 
 .input-box input{
@@ -128,37 +122,15 @@ body{
 .continue-button button:hover{
     background-color: ;
 }
- @media screen and (max-width 1330px){
+ 
+@media screen and (max-width 1330px){
    .container{
     width: 50%;
    }
    .form{
     width: 100%;
    }
-
  }
-@media screen and (max-width: 1064px) {
-    .container{
-        width: 90%;
-        height: auto;
-    }
-    .input-group{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
-    }
-    .gender-input{
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-input{
-        margin-top: 0.5rem;
-    }
 
-}
 
 
