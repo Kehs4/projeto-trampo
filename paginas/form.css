@@ -1,5 +1,9 @@
+
+
 body{
-    background-image: linear-gradient(to right, rgb(233, 30, 212),rgba(96, 10, 76, 0.728));
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(37, 30, 168, 0.548) 0%, rgba(9, 9, 121, 0.712) 35%, rgba(0,212,255,1) 100%);
+    
 }
 
 .caixa{
@@ -8,9 +12,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 19px;
-    background-color: rgb(147, 74, 189);
+    background-color: rgba(59, 59, 131, 0.76);
     border-radius: 5px;
     color:black;
+    background-color: white;
 }
 
 fieldset{
@@ -53,7 +58,7 @@ legend{
 .inputs:valid ~.label{
     top: -20px;
     font-size: 12px;
-
+    color: white;
 }
 
 #nascimento{
@@ -80,5 +85,4 @@ legend{
 #enviar:hover{
     background-image:linear-gradient();
 }
-
 
