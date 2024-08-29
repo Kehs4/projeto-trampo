@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, cursive;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+
+.firstSection {
+  margin-bottom: 50px;
+  padding: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px black;
+  background-image: linear-gradient(to right,
+  #240339 0%,
+  #740a80 51%,
+  #24033b 100%);
+  font-size: 30px;
+  border-top: 5px white;
+  box-shadow: 0px 5px 8px rgb(78, 2, 132);
+}
+
+.secondSection {
+  display: flex;
+  width: 100%;
+}
+
+.etapasCadastro {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.imgCadastro {
+  height: 300px;
+  width: 300px;
+  margin-left: -19px;
+}
+
+.imgDados {
+  width: 300px;
+  height: 300px;
+}
+
+.imgPintor {
+  height: 300px;
+  width: 300px;
+}
+
+.escritaCadastro {
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #000000;
+}
+
+.escritaUm {
+    text-align: center;
+}
+
+.escritaDois {
+  text-align: center;
+}
+
+.escritaTres {
+    text-align: center;
+}
+
+.imgsCadastro {
+  display: flex;
+  width: 80%;
+}
+
+.thirdSection {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.escritaPronto {
+  font-size: 25px;
+
+  padding: 25px;
+  max-width: 1100px;
+}
+
+.escritaPronto3 {
+  margin-top: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(27, 3, 34) 85%, #3d115a 100%);
+
+}
+
+.escritaFooter {
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.01em;
+  line-height: 2;
+  left: 800px;
+  font-size: 18px;
+  margin-right: 100px;
+  text-shadow: 0px 1px 2px #ba37c8;
+  box-shadow: 0px 1px rgb(255, 255, 255);
+}
+
+.formCadastro {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 10px solid; 
+    border-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    box-shadow: 1px 20px 40px rgb(63, 3, 136);
+    border-top-color: #370459;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-bottom-color: #4a1170;
+}
+
+.formCadastro h1 {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnForm {
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 400px;
+}
+
+.btnSignup {
+  font-size: 25px;
+  width: 250px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    #240439 0%,
+    #660c70 51%,
+    #240439 100%
+  );
+  transition: 0.5s;
+  color: white;
+  box-shadow: 2px 2px 10px black;
+  border: none;
+}
+
+.btnSignup:hover {
+  background-position: right center;
+  text-decoration: none;
+  scale: 1.02;
+  transition: 0.5s;
+}
+
+@media screen and (max-width:1600px) {
+
+  .lista {
+    margin-right: 10px;
+  }
+ 
+  .etapasCadastro {
+    gap: 5%;
+  }
+
+  .firstSection h1 {
+    font-size: 1.3em;
+  }
+
+}
+
+@media screen and (max-width:1510px) {
+  .etapasCadastro {
+    gap: 1%;
+  }
+
+}
+
+@media screen and (max-width:1450px) {
+  
+  .etapasCadastro{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondSection{
+    max-width: 150%;
+  }
+
+  .formCadastro{
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .escritaFooter{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:950px) {
+
+  .firstSection h1{
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  
+  .escritaCadastro{
+    flex-direction: column;
+  }
+
+  .escritaFooter{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .logoHeader {
+    width: 20px;
+  }
+
+  .formCadastro {
+    width: 420px;
+    height: 420px;
+  }
+
+  .formEscrita {
+    font-size: 14px;
+  }
+  
+  .btnSignup{
+    margin-bottom: 70px;
+  }
+
+  .escritaPronto {
+    font-size: 18px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:650px){
+  .formEscrita video{
+    width: 400px;
+    height: 400px;
+  }
+}
